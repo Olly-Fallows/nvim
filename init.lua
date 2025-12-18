@@ -14,6 +14,8 @@ vim.cmd('filetype plugin indent on')
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+package.path = package.path .. ';' .. vim.fn.stdpath('config') .. '/?.lua'
+
 require('olly.options')
 require('olly.keymaps')
 
